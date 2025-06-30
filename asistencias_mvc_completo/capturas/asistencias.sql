@@ -1,0 +1,9 @@
+
+CREATE TABLE asistencias (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  nombre VARCHAR(100) NOT NULL,
+  hora TIME NOT NULL,
+  fecha DATE NOT NULL,
+  estado ENUM('PRESENTE', 'AUSENTE', 'TARDE', 'JUSTIFICADO') DEFAULT 'PRESENTE',
+  observaciones TEXT
+);
